@@ -1,0 +1,79 @@
+
+body {
+  min-height: 300vh;
+  background: #efefef;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  font-weight: bold;
+}
+.box:after {
+  font-weight: normal;
+  font-size: 12px;
+}
+.container {
+  height: 80vh;
+  padding: 8px;
+  margin-top: 60vh;
+  background: #fff;
+}
+.elm1 {
+  width: 90vw;
+  height: 90vw;
+  background: skyblue;
+}
+.elm1:after {
+  content: "position: relative;";
+}
+.elm2 {
+  background: tomato;
+}
+.elm2:after {
+  content: "position: absolute;";
+}
+.elm3 {
+  background: lightgreen;
+}
+.elm3:after {
+  content: "position: fixed;";
+}
+.elm4 {
+  width: 100%;
+  background: yellow;
+}
+.elm4:after {
+  content: "position: sticky;";
+}
+
+/*
+■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+*/
+
+/* look at me */
+.elm1 {
+  position: relative;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+}
+.elm2 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.elm3 {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+.elm4 {
+  position: sticky;
+  top: calc(8px + 15vw);
+}
