@@ -1,5 +1,13 @@
 body {
+  display: flex;
+  flex-direction: column;
   max-width: 390px;
+  min-height: 100vh;
+}
+main {
+  position: relative;
+  flex: 1;
+  padding-top: 15vw;
 }
 .header {
   position: fixed;
@@ -177,11 +185,12 @@ body {
 }
 .ad {
   position: relative;
+  margin: 0 auto;
 }
 .ad::after {
   content: "\e5c9";
   position: absolute;
-  top: -7.5vw;
+  top: -20px;
   left: 0;
   display: flex;
   flex-direction: column;
@@ -192,3 +201,13 @@ body {
   color: #777;
   cursor: pointer;
 }
+.bnner-ad {
+  position: relative;
+  z-index: 1000;
+  width: 320px;
+  height: 50px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* case1 *.
