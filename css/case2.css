@@ -1,0 +1,15 @@
+.wrapper {
+  position:relative;
+}
+
+.freeza {
+  position:absolute;
+  z-index: 530000;
+  color: #00f;
+}
+
+.mob {
+  position:absolute;
+  z-index: 5;
+  color: #f00;
+}
