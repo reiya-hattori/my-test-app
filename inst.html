@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/check.css" />
   </head>
-  <body>
+  <body style="overflow: hidden;">
     <header class="header">
       <div id="menuBtn">
         <span></span>
@@ -23,13 +23,14 @@
         <ul class="header-menu">
           <li><a href="/">TOP</a></li>
           <li><a href="./case1.html">CASE 1</a></li>
+          <li><a href="./case2.html">CASE 2</a></li>
           <li><a href="./inst.html">INST</a></li>
         </ul>
       </nav>
       <h1><a href="/">Header</a></h1>
     </header>
     <main>
-      <div id="ad3">
+      <div id="ad3" style="opacity: 0; visibility: hidden;">
         <div class="ad bnner-ad"><img src="./assets/320_50.webp" alt="" /></div>
       </div>
       <article>
@@ -80,8 +81,10 @@
     </main>
     <footer class="footer">footer</footer>
     <div id="pageTop">TOP</div>
-    <div id="ad2" class="ad">AD2</div>
-    <div id="ad4" class="ad inst_ad"></div>
+    <div id="ad2" class="ad" style="opacity: 0; visibility: hidden;">AD2</div>
+    <div id="ad4" class="inst_ad">
+      <div class="ad inst_ad_body">AD4</div>
+    </div>
     <script src="./js/index.js"></script>
     <script src="./js/es.js"></script>
   </body>

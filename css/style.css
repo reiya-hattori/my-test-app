@@ -183,6 +183,29 @@ main {
   height: 25vh;
   background: limegreen;
 }
+#ad4 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+}
+.ad.inst_ad_body {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 320px;
+  background: #fff;
+}
 .ad {
   position: relative;
   margin: 0 auto;
@@ -200,6 +223,17 @@ main {
   font-family: "Material Icons";
   color: #777;
   cursor: pointer;
+}
+.ad.inst_ad_body::after {
+  content: "\e5cd";
+  color: #c6c6c6;
+  font-size: 4rem;
+  top: initial;
+  bottom: -40px;
+  left: initial;
+  right: 0;
+  width: 40px;
+  height: 40px;
 }
 .bnner-ad {
   position: relative;
