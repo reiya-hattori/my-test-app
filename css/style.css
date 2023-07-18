@@ -180,11 +180,12 @@ main {
   align-items: center;
   font-weight: bold;
   width: 70vw;
-  height: 25vh;
+  height: 20vh;
   background: limegreen;
 }
 #ad4 {
   position: fixed;
+  z-index: 2147483647;
   top: 0;
   left: 0;
   display: flex;
@@ -196,14 +197,17 @@ main {
 }
 .ad.inst_ad_body {
   position: absolute;
-  bottom: 40px;
+  top: 0;
+  right: 0;
+  bottom: 0;
   left: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 320px;
+  width: 320px;
+  height: 280px;
+  margin: auto;
   background: #fff;
 }
 .ad {
@@ -228,9 +232,8 @@ main {
   content: "\e5cd";
   color: #c6c6c6;
   font-size: 4rem;
-  top: initial;
-  bottom: -40px;
-  left: initial;
+  top: -40px;
+  left: 0;
   right: 0;
   width: 40px;
   height: 40px;
